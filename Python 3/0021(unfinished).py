@@ -4,12 +4,12 @@ encoded = "p";
 
 for i in range(len(text)):
     for j in range(len(vowels)):
-        if(text[i]==encoded and text[i-1]==vowels[j] and text[i+1]==vowels[j]):
+        if(text[i]==encoded and text[i-1]==vowels[j]):
             text.pop(i-1);
-            if(text[i+1]):
-                text.pop(i+1);
-            else:
-                continue;
+            #if(text[i+1]):
+                #text.pop(i+1);
+            #else:
+                #continue;
         else:
             pass;
 
